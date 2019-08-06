@@ -6,7 +6,11 @@
 */
 
 function reduceIt(array, operation, initialValue) {
-  // Implement me! 
+  let accumulatedValue = initialValue;
+  for(let i = 0; i < array.length; i++) {
+    accumulatedValue = operation(accumulatedValue, array[i]);
+  }
+  return accumulatedValue;
 }
 
-// Don't forget to supply the function to the spec file. 
+export default reduceIt;
