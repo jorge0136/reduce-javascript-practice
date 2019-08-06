@@ -5,12 +5,10 @@
  * But how do you implement reduce?
 */
 
-function reduceIt(array, operation, initialValue) {
+export const reduceIt = (array, operation, initialValue) => {
   let accumulatedValue = initialValue;
   for(let i = 0; i < array.length; i++) {
     accumulatedValue = operation(accumulatedValue, array[i]);
   }
   return accumulatedValue;
-}
-
-export default reduceIt;
+};
