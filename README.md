@@ -1,6 +1,8 @@
 # reduce-javascript-practice
 Quick challenege to practice javascript's `reduce` [function](https://www.freecodecamp.org/news/reduce-f47a7da511a9/). 
 
+Deeply inspired by [hiquest's javascript exercises](https://github.com/hiquest/jsex)
+
 ## Install
 
 1. `git clone https://github.com/jorge0136/reduce-javascript-practice`
