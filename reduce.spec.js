@@ -1,4 +1,4 @@
-import reduceIt from "./reduce";
+import { reduceIt } from "./reduce";
 
 describe('Homegrown reduce function', () => {
 
