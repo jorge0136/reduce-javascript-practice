@@ -5,7 +5,7 @@
  * But how do you implement reduce?
 */
 
-function reduceIt(array, operation, initial) {
+function reduceIt(array, operation, initialValue) {
   // Implement me! 
 }
 
