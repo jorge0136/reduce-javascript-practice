@@ -1,10 +1,11 @@
 # reduce-javascript-practice
-Quick challenege to practice javascript's `reduce` function.
+Quick challenege to practice javascript's `reduce` [function](https://www.freecodecamp.org/news/reduce-f47a7da511a9/). 
 
 ## Install
 
-`git clone https://github.com/jorge0136/reduce-javascript-practice`
-`yarn install`
+1. `git clone https://github.com/jorge0136/reduce-javascript-practice`
+2. `cd reduce-javascript-practice`
+3. `yarn install`
 
 ## Implement
 
