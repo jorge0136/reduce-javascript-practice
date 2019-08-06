@@ -20,22 +20,21 @@ describe('Homegrown reduce function', () => {
         ];
 
         // Callback function which will fix the first name of each person
-        let fixFirstNameCallbackFunction = function (accumulator, currentElement) {
-        // Generate a correct person object by changing the first letter of the first name
-        let fixedPerson = {
-            ...currentElement,
-            firstName:
-                currentElement.firstName.charAt(0).toUpperCase() +
-                currentElement.firstName.slice(1)
-        };
-
-        // Return the value for the next step by using the array from the previous step and
-        // add the new fixed person
-        return [...accumulator, fixedPerson];
+        let fixFirstName = function (accumulator, currentElement) {
+            // Generate a correct person object by changing the first letter of the first name
+            let fixedPerson = {
+                ...currentElement,
+                firstName:
+                    currentElement.firstName.charAt(0).toUpperCase() +
+                    currentElement.firstName.slice(1)
+            };
+            // Return the value for the next step by using the array from the previous step and
+            // add the new fixed person
+            return [...accumulator, fixedPerson];
         };
 
         test('reduces an object property, upcasing first names', () =>
-            expect(reduceIt(people, fixFirstNameCallbackFunction, []))
+            expect(reduceIt(people, fixFirstName, []))
             .toEqual([
                 { firstName: 'Michael', lastName: 'Scott' },
                 { firstName: 'Jim', lastName: 'Halpert' },
