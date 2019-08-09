@@ -5,8 +5,7 @@
  * But how do you implement reduce?
 */
 
-export const reduceIt = (array, operation, initialValue) => {
-  let accumulatedValue = initialValue;
-  array.map((item) => { accumulatedValue = operation(accumulatedValue, item) });
-  return accumulatedValue;
+export const reduceIt = ([head, ...tail], operation, accumulator) => {
+  if (head === undefined) return accumulator;
+  return reduceIt(tail, operation, operation(accumulator, head));
 };
