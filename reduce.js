@@ -7,8 +7,6 @@
 
 export const reduceIt = (array, operation, initialValue) => {
   let accumulatedValue = initialValue;
-  array.map((item) => {
-    accumulatedValue = operation(accumulatedValue, item);
-  });
+  array.map((item) => { accumulatedValue = operation(accumulatedValue, item) });
   return accumulatedValue;
 };
